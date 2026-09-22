@@ -1,4 +1,5 @@
-import discord
+import discord 
+import os
 from discord.ext import commands
 
 # Konfiguracja intencji bota
@@ -67,4 +68,4 @@ async def mercy(ctx):
     await ctx.send(embed=embed, view=view)
 
 # Wklej swój token bota poniżej w cudzysłowie
-client.run("")
+bot.run(os.getenv("DISCORD_TOKEN"))
